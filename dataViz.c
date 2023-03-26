@@ -192,15 +192,15 @@ void combined_screen()
 
     glColor3f(0, 0, 1);
     draw_string(12, 445, GLUT_BITMAP_HELVETICA_18, "-- Lasagna");
-    parse_csv("lasagna.csv");
+    parse_csv("data/lasagna.csv");
 
     glColor3f(0, 1, 1);
     draw_string(12, 455, GLUT_BITMAP_HELVETICA_18, "-- Shrimp");
-    parse_csv("shrimp.csv");
+    parse_csv("data/shrimp.csv");
 
     glColor3f(1, 0, 1);
     draw_string(12, 465, GLUT_BITMAP_HELVETICA_18, "-- Lobster");
-    parse_csv("lobster.csv");
+    parse_csv("data/lobster.csv");
 
     glutPostRedisplay();
     glFlush();
