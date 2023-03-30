@@ -1,6 +1,6 @@
 # DataVisualizer Using OpenGL
 
-This is C a program that uses OpenGl to visualize data in a 2D environment. 
+This is a C program that uses OpenGl to visualize data in a 2D environment. 
 ### The Data
 - Google Search Trends for 3 terms -> Lasagna, Lobster and Shrimp.
 - Stored in `.csv` files.
