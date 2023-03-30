@@ -1,12 +1,14 @@
 #define GL_SILENCE_DEPRECATION
-// #include <OpenGL/gl.h>
-// #include <OpenGL/glu.h>
-// #include <GLUT/glut.h>
 
 // header files
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <GL/glut.h>
+// #include <GL/gl.h>
+// #include <GL/glu.h>
+// #include <GL/glut.h>
+
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#include <GLUT/glut.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -126,7 +128,6 @@ void home_screen()
     glColor3f(0, 1, 0);
     glLineWidth(3);
     begin_rectangle();
-    draw_string(440, 25, GLUT_BITMAP_TIMES_ROMAN_24, "Abhinav Kumar");
     draw_string(440, 10, GLUT_BITMAP_TIMES_ROMAN_24, "Amartya Nambiar");
 
     glutPostRedisplay();
@@ -144,7 +145,6 @@ void control_screen()
         draw_string(180, h_y - 42 - i * 15, GLUT_BITMAP_HELVETICA_18, helper[i]);
     }
     glColor3f(1, 0, 0);
-    draw_string(440, 25, GLUT_BITMAP_TIMES_ROMAN_24, "Abhinav Kumar");
     draw_string(440, 10, GLUT_BITMAP_TIMES_ROMAN_24, "Amartya Nambiar");
 }
 
@@ -192,15 +192,15 @@ void combined_screen()
 
     glColor3f(0, 0, 1);
     draw_string(12, 445, GLUT_BITMAP_HELVETICA_18, "-- Lasagna");
-    parse_csv("data/lasagna.csv");
+    parse_csv("lasagna.csv");
 
     glColor3f(0, 1, 1);
     draw_string(12, 455, GLUT_BITMAP_HELVETICA_18, "-- Shrimp");
-    parse_csv("data/shrimp.csv");
+    parse_csv("shrimp.csv");
 
     glColor3f(1, 0, 1);
     draw_string(12, 465, GLUT_BITMAP_HELVETICA_18, "-- Lobster");
-    parse_csv("data/lobster.csv");
+    parse_csv("lobster.csv");
 
     glutPostRedisplay();
     glFlush();
